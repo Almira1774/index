@@ -410,6 +410,11 @@ html {
     border-width: 0;
     
 }
+.menu__button:hover{
+    border: #B8FFEC 2px solid;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+}
 
 .menu__button--brands {
 
