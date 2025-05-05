@@ -46,6 +46,7 @@ html {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        min-width: 319px;
         max-width: 320px;
         margin-right: auto;
         margin-left: auto;
@@ -549,8 +550,8 @@ html {
 
 @media (min-width: 1120px) {
     .menu__button--reviews {
-        min-width: 95px;
-        max-width: 100%;
+        width: 95px;
+       
         height: 40px;
         padding-left: 24px;
         align-self: flex-end;
