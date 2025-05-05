@@ -370,7 +370,7 @@ html {
     .menu {
         display: flex;
         flex-wrap: nowrap;
-        max-width: 100%;
+        max-width: 320px;
         height: 40px;
         overflow-x: scroll;
         margin-left: auto;
@@ -492,7 +492,12 @@ html {
 }
 
 
-
+@media (min-width: 320px) and (max-width: 767px) {
+    .menu__button--prices {
+        min-width: 143px;
+        height: 40px;
+    }
+}
 @media (min-width: 768px) and (max-width: 1119px) {
     .menu__button--prices {
         min-width: 143px;
