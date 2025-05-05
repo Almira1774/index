@@ -399,7 +399,7 @@ html {
         flex-direction: row;
         flex-wrap: wrap;
         max-width: 1096px;
-       height: auto;
+        height: auto;
         margin-top: 24px;
         padding-left: 33px;
         margin-left: auto;
@@ -425,7 +425,7 @@ html {
 
 .menu__button--brands {
 
-   min-width: 233px;
+    min-width: 233px;
     height: auto;
 
 
@@ -454,7 +454,7 @@ html {
 
 @media (min-width:1120px) {
     .menu__button--devices {
-       min-width: 254px;
+        min-width: 254px;
         height: auto;
     }
 }
@@ -503,7 +503,7 @@ html {
 @media (min-width: 768px) and (max-width: 1119px) {
 
     .menu__button--special-prices {
-       min-width: 172px;
+        min-width: 172px;
         position: relative;
         height: auto;
     }
@@ -538,8 +538,6 @@ html {
     }
 }
 
-
-
 @media (min-width: 1120px) {
     .menu__button--special-prices {
         min-width: 192px;
@@ -551,38 +549,20 @@ html {
 @media (min-width: 1120px) {
     .menu__button--reviews {
         width: 95px;
-       
+padding-left: 20px;
         height: 40px;
-        padding-left: 24px;
-        align-self: flex-end;
-       
+
+
+
 
     }
 }
 
 
 
-@media (min-width: 320px) and (max-width: 767px) {
 
-    .menu__button--prices,
-    .menu__button--brands,
-    .menu__button--special-prices,
-    .menu__button--properties,
-    .menu__button--centers,
-    .menu__button--reviews {
-        display: none;
-    }
-}
 
-@media (min-width: 768px) and (max-width: 1119px) {
 
-    .menu__button--brands,
-    .menu__button--properties,
-    .menu__button--centers,
-    .menu__button--reviews {
-        display: none;
-    }
-}
 
 @media (min-width: 1120px) {
 
@@ -673,8 +653,7 @@ html {
 
     .main__text {
         font: 400 14px/18px 'TTLakes';
-        min-width: 288px;
-        max-width: 100%;
+        max-width: 288px;
 
 
 
@@ -686,9 +665,7 @@ html {
     .main__text {
         font: 400 14px/20px 'TTLakes';
         max-width: 336px;
-        height: auto;
         padding-left: 24px;
-
         text-align: left;
 
     }
