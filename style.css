@@ -366,54 +366,54 @@ html {
     }
 }
 
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
     .menu {
-        display: flex;
-        flex-wrap: nowrap;
+
         max-width: 320px;
-        height: 40px;
+        padding-left: 16px;
+        margin-top: 24px;
         overflow-x: scroll;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
-
 @media (min-width: 768px) and (max-width: 1119px) {
     .menu {
-        display: flex;
-        flex-wrap: nowrap;
+
         overflow-x: scroll;
-        max-width: 800px;
-        height: auto;
+        max-width: 768px;
         margin-top: 24px;
-        margin-left: auto;
-        margin-right: auto;
         padding-left: 24px;
+
     }
 }
 
 @media (min-width: 1120px) {
     .menu {
-        display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         max-width: 1096px;
-        height: auto;
         margin-top: 24px;
         padding-left: 33px;
-        margin-left: auto;
-        margin-right: auto;
+
     }
 }
 
 .menu__button {
+    display: flex;
+    height: 40px;
     font: 500 16px/24px 'TTLakes';
     letter-spacing: -0.2px;
     color: #7E7E82;
-    background-color: #F8F8F8;
-    border-width: 0;
-
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
 
 }
 
@@ -423,22 +423,50 @@ html {
     background-color: #FFFFFF;
 }
 
-.menu__button--brands {
+@media (min-width: 320px) and (max-width: 767px) {
 
-    min-width: 233px;
-    height: auto;
+    .menu__button--brands,
+    .menu__button--services,
+    .menu__button--centers {
 
+        min-width: 233px;
 
+    }
+}
 
+@media (min-width: 320px) and (max-width: 767px) {
+    .menu__button--devices {
+
+        min-width: 246px;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .menu__button--prices {
+        min-width: 143px;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .menu__button--special-prices {
+        min-width: 191px;
+    }
 }
 
 
 @media (min-width: 320px) and (max-width: 767px) {
-    .menu__button--devices {
-        min-width: 246px;
-        max-width: 100%;
-        height: 40px;
-        padding-left: 16px;
+    .menu__button--reviews {
+        min-width: 95px;
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+    .menu__button--brands {
+        min-width: 233px;
 
     }
 }
@@ -446,133 +474,93 @@ html {
 @media (min-width: 768px) and (max-width: 1119px) {
     .menu__button--devices {
         min-width: 248px;
-        height: 40px;
-        padding-left: 16.67px;
+
     }
 }
-
-
-@media (min-width:1120px) {
-    .menu__button--devices {
-        min-width: 254px;
-        height: auto;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-    .menu__button--services {
-        min-width: 250px;
-        max-width: 100%;
-        height: 40px;
-        position: relative;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-
-    .menu__button--services::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 50%;
-        width: 40%;
-        height: 100%;
-        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-        transform: translateX(0);
-        transition: transform 0.3s ease;
-    }
-}
-
 
 @media (min-width: 768px) and (max-width: 1119px) {
     .menu__button--services {
         min-width: 211px;
-        height: 40px;
+
     }
 }
 
-
-@media (min-width: 320px) and (max-width: 767px) {
-    .menu__button--prices {
-        min-width: 143px;
-        height: 40px;
-    }
-}
 @media (min-width: 768px) and (max-width: 1119px) {
     .menu__button--prices {
         min-width: 143px;
-        height: 40px;
+
     }
 }
+
 
 @media (min-width: 768px) and (max-width: 1119px) {
 
     .menu__button--special-prices {
         min-width: 172px;
-        position: relative;
-        height: auto;
     }
 }
 
-@media (min-width: 768px) and (max-width:1119px) {
 
-    .menu__button--special-prices::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-        transform: translateX(0);
-        transition: transform 0.3s ease;
+@media (min-width: 768px) and (max-width: 1119px) {
+    .menu__button--reviews {
+        min-width: 95px;
+
     }
 }
+
+@media (min-width: 767px) and (max-width: 1119px) {
+    .menu__button--centers {
+        min-width: 233px;
+    }
+}
+
+@media (min-width: 1200px){
+    .menu__button--brands{
+        min-width: 233px;
+    }
+}
+@media (min-width:1120px) {
+    .menu__button--devices {
+        min-width: 254px;
+        
+    }
+}
+
+
 
 @media (min-width: 1120px) {
     .menu__button--prices {
-        max-width: 100%;
-        height: 40px;
+       min-width: 150px;
+
     }
 }
 
 @media (min-width: 1120px) {
     .menu__button--centers {
         min-width: 233px;
-        height: 40px;
     }
 }
 
 @media (min-width: 1120px) {
     .menu__button--special-prices {
-        min-width: 192px;
-        height: 40px;
+        min-width: 180px;
+
 
     }
 }
 
 @media (min-width: 1120px) {
     .menu__button--reviews {
-        width: 95px;
-padding-left: 20px;
-        height: 40px;
-
-
+       min-width: 95px;
+        padding-left: 15px;
 
 
     }
 }
 
-
-
-
-
-
-
 @media (min-width: 1120px) {
 
-    .menu__button--services,
-    .menu__button--properties {
+    .menu__button--services {
         display: none;
     }
 }
@@ -588,6 +576,7 @@ padding-left: 20px;
         margin-top: 24px;
         margin-left: auto;
         margin-right: auto;
+        padding-left: 16px;
 
     }
 }
